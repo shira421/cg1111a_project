@@ -1,6 +1,7 @@
-#define TIMEOUT 1900        // max microseconds to wait (US)
-#define SPEED_OF_SOUND 340  // speed of sound in m/s
+#include "MeMCore.h"
 
+#define TIMEOUT 1900 // max microseconds to wait (US)
+#define SPEED_OF_SOUND 340 // speed of sound in m/s
 #define BASE 255 // base speed
 #define TURN 180 // turn speed
 
@@ -13,11 +14,16 @@ Green LED Y2 (A LOW B HIGH)
 Red LED Y3 (A HIGH B HIGH)
 */
 
-#define ULTRASONIC 10  // assigning Ultrasonic to port 2
 #define IR A0 // IR Receiver OUT
 #define LDR A1 // LDR OUT
 #define A A2 // Logic Pin A
 #define B A3 // Logic Pin B
+#define ULTRASONIC 10  // assigning Ultrasonic to port 2
+
+MeLineFollower lineFinder(PORT_1); //assigning lineFinder to port 1
+MeDCMotor leftMotor(M1);   // assigning leftMotor to port M1
+MeDCMotor rightMotor(M2);  // assigning rightMotor to port M2
+MeBuzzer buzzer; //buzzer
 
 // musical notes (frequencies in Hz)
 #define B4  494
@@ -27,13 +33,6 @@ Red LED Y3 (A HIGH B HIGH)
 #define F4  370
 #define A4  440
 #define B3  247
-
-#include "MeMCore.h"
-
-MeLineFollower lineFinder(PORT_1); //assigning lineFinder to port 1
-MeDCMotor leftMotor(M1);   // assigning leftMotor to port M1
-MeDCMotor rightMotor(M2);  // assigning rightMotor to port M2
-MeBuzzer buzzer; //buzzer
 
 void playThickOfItMelody() {
   // 1
