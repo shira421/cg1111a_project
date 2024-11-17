@@ -1,8 +1,11 @@
 Designed by A/Prof Soh WS
 CG1111A Engineering Principles & Practice I
-The A-maze-ing Race Project 2024
+
+**The A-maze-ing Race Project 2024**
+
 
 **Introduction**
+
 Welcome to the grand project of this course: The A-maze-ing Race!
 
 In this race, your mBot needs to find its way through a maze in the shortest time. Similar to its namesake TV program, your mBot will be facing a number of challenges at intermediate waypoints while attempting to complete the race. To successfully meet all the requirements, you need to have a good grasp of many of the principles you have learnt in this course and apply them into good practice!
