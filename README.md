@@ -2,7 +2,7 @@ Designed by A/Prof Soh WS
 CG1111A Engineering Principles & Practice I
 The A-maze-ing Race Project 2024
 
-Introduction
+**Introduction**
 Welcome to the grand project of this course: The A-maze-ing Race!
 In this race, your mBot needs to find its way through a maze in the shortest time. Similar to its
 namesake TV program, your mBot will be facing a number of challenges at intermediate waypoints
@@ -10,7 +10,7 @@ while attempting to complete the race. To successfully meet all the requirements
 a good grasp of many of the principles you have learnt in this course and apply them into good
 practice!
 
-Key Project Requirements
+**Key Project Requirements**
 1. The mBot must not bump into any wall. Your mBot shall accomplish this with the help of one
 ultrasonic sensor on one side, and one infrared (IR) proximity sensor on the other side (no
 restriction on which of these two sensors to place on the left or right). You need to come up
@@ -48,7 +48,7 @@ execute one of the following five types of turns:
 
 Figure 1: The five types of turns that your mBot needs to execute.
 
-Colour Interpretation
+**Colour Interpretation**
 Red Left-turn
 Green Right turn
 Orange 180° turn within the same grid
@@ -65,7 +65,7 @@ At the end of the maze, there will also be a black strip. The colour of the pape
 the mBot at this grid will be white. Upon decoding that it has reached the end of the conquest,
 the mBot must stop moving, and play a celebratory tune of your choice (Yay!).
 
-Key Knowledge and Skills Needed
+**Key Knowledge and Skills Needed**
 • DC Circuit Principles
 • Arduino/mBot programming (self-learn)
 • Analog-to-digital conversion
@@ -77,7 +77,7 @@ Key Knowledge and Skills Needed
 • Hardware wiring and debugging skills
 • Equipment usage (multimeter, etc.)
 
-Project Evaluation
+**Project Evaluation**
 1. Mock Evaluation: Week 13 Studio A timeslot
 This will be a good gauge of your mBot’s readiness. The evaluation procedure will be the same
 as the final evaluation. Hence, you should get your mBot ready as if it is the final evaluation,
@@ -85,7 +85,7 @@ so that you know what are your mBot’s shortfalls and improve upon them.
 
 2. Final Evaluation: Week 13 Studio B timeslot
 
-Rules
+**Rules**
 1. At each challenge, if your mBot turns in the wrong direction, you will teleport it to one grid
 before the challenge to make a second attempt, and if necessary, a third attempt, while the
 clock continues to run. If it fails at the third attempt, you shall manually turn it to the correct
@@ -127,25 +127,18 @@ demo if the following conditions occur, subject to a 20% penalty of the total de
 a. If your mBot fails to decode more than half of the colour challenges.
 b. If your mBot keeps bumping into walls or getting stuck in the maze.
 
-Grading Criteria
-Criterion Marks
-Project Demo 25
-Neatness of wirings and robot 5
-Algorithms and coding (e.g., elegance of
-algorithms, well commented codes, etc.)
-10
-Short team report 10
-Total 50
+**Grading Criteria**
+• Project Demo 25
+• Neatness of wirings and robot 5
+• Algorithms and coding (e.g., elegance of algorithms, well commented codes, etc.) 10
+• Short team report 10
+**Total** 50
 
 The following are the key grading criteria during the project demo:
-• Number of bumps into the maze walls (regardless of whether it gets stuck); note
-that wires brushing against the wall are also regarded as bumps.
-• Successfully decoding the challenges: for each challenge, your mBot has up to 3
-tries. You get full marks for a challenge if you succeed in the 1st attempt; some
-penalty marks will be incurred if you succeed in the 2nd or the 3rd attempt.
+• Number of bumps into the maze walls (regardless of whether it gets stuck); note that wires brushing against the wall are also regarded as bumps.
+• Successfully decoding the challenges: for each challenge, your mBot has up to 3 tries. You get full marks for a challenge if you succeed in the 1st attempt; some penalty marks will be incurred if you succeed in the 2nd or the 3rd attempt.
 • Whether your mBot utilizes the IR proximity sensor (we will test it).
 • Whether your mBot can travel in a near-straight line when not turning.
-• Whether your mBot can execute a turn accurately without over- or undermanoeuvring too much.
-• Whether the mBot plays a celebratory tone upon detecting the end of the maze, and
-stops moving.
+• Whether your mBot can execute a turn accurately without over or undermanoeuvring too much.
+• Whether the mBot plays a celebratory tone upon detecting the end of the maze, and stops moving.
 • Total time taken to complete the maze.
