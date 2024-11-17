@@ -14,18 +14,18 @@ Green LED Y2 (A LOW B HIGH)
 Red LED Y3 (A HIGH B HIGH)
 */
 
-#define IR A0 // IR Receiver OUT
-#define LDR A1 // LDR OUT
-#define A A2 // Logic Pin A
-#define B A3 // Logic Pin B
+#define IR A0 // IR Receiver OUT (port 4, pin A0)
+#define LDR A1 // LDR OUT (port 4, pin A1)
+#define A A2 // Logic Pin A (port 3, pin A2)
+#define B A3 // Logic Pin B (port 3, pin A3)
 #define ULTRASONIC 10  // assigning Ultrasonic to port 2
 
 MeLineFollower lineFinder(PORT_1); //assigning lineFinder to port 1
 MeDCMotor leftMotor(M1);   // assigning leftMotor to port M1
 MeDCMotor rightMotor(M2);  // assigning rightMotor to port M2
-MeBuzzer buzzer; //buzzer
 
 // musical notes (frequencies in Hz)
+MeBuzzer buzzer; //buzzer
 #define B4  494
 #define C4  277
 #define D4  294
