@@ -344,7 +344,7 @@ void loop() {
     findDistance();
     int s = findClosest();
     switch(s) {
-      case 0:
+      case 0: // pink
       sqLeft(TURN, 420);
       forward(TURN, 1030);
       sqLeft(TURN, 420);
