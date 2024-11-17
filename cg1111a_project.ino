@@ -109,7 +109,7 @@ double blackArray[3] = { 874.0, 655.0, 659.0 }; // calibrated black array
 double greyDiff[3] = { 45.0, 223.0, 199.0 }; // white - black array
 
 // for Euclidean Distance
-double distance[6] = {0, 0, 0, 0, 0, 0};
+double distance[6] = { 0, 0, 0, 0, 0, 0 };
 double logic[6] = { 0, 1, 2, 3, 4, 5 };
 
 // pink, red, orange, blue, green, white checkpoints (ordered)
@@ -241,7 +241,7 @@ double USdist() {
 
   pinMode(ULTRASONIC, INPUT);
   double duration = pulseIn(ULTRASONIC, HIGH, TIMEOUT);
-  double USdistance = ((duration / 2.0) / 1000000) * SPEED_OF_SOUND * 100;
+  double USdistance = ((duration/2.0)/1000000) * SPEED_OF_SOUND * 100;
   return USdistance;
 }
 
@@ -256,7 +256,7 @@ double IRdist() {
   scale from experimentation is 60 to 510 for readings from 1.5cm to 9.0 cm
   values are normalised to reflect distance
   */
-  double scaled = (((2*x-y)-60.0)/450.0)*7.5 + 1.5;
+  double scaled = (((2*x-y)-60.0)/450.0) * 7.5 + 1.5;
   return scaled;
 }
 
@@ -295,9 +295,9 @@ add them up and sqrt that to get distance magnitude
 */
 
 void findDistance(){
-  for (int i=0; i<6; i++){
+  for (int i = 0; i < 6; i++){
     double sum = 0;
-    for (int j=0; j<3; j++){
+    for (int j = 0; j < 3; j++){
       double x = detectedArray[j] - colorArray[i][j];
       sum = sum + x*x;
     }
@@ -308,8 +308,8 @@ void findDistance(){
 // get minimum distance from array to find nearest color
 int findClosest(){
   int min = 0;
-  for (int i=0; i<6; i++){
-    if (distance[i]<distance[min]){
+  for (int i = 0; i < 6; i++){
+    if (distance[i] < distance[min]){
       min = i;
     }
   }
@@ -382,12 +382,12 @@ void loop() {
     USr = 11.0;
   }
 
-  if (IRr<4.0) { // use IR if the reading is below 4.0 cm (IR readings don't scale well past this value)
-    error = 9.0-IR; // stable point from IR pov = 9.0cm
+  if (IRr < 4.0) { // use IR if the reading is below 4.0 cm (IR readings don't scale well past this value)
+    error = 9.0 - IR; // stable point from IR pov = 9.0cm
     correction = error * KPir + ((error-past_error)/TIMEOUT) * KDir; // PID controller for IR
   }
   else {
-    error = (USr-11.0); // stable point from US pov = 11.0cm
+    error = (USr - 11.0); // stable point from US pov = 11.0cm
     correction = error * KPus + ((error-past_error)/TIMEOUT) * KDus; // PID controller for US
   }
   nudge(BASE, correction); // movement with correction
