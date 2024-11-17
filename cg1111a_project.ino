@@ -288,7 +288,8 @@ void detectColor() {
   // Serial.println(detectedArray[2]);
 }
 
-/* Euclidean Distance
+/* 
+Euclidean Distance
 square the difference in R, G and B values between
 detected color and checkpoint color individually
 add them up and sqrt that to get distance magnitude
@@ -328,9 +329,9 @@ void setup() {
 
 void loop() {
   // detectColor();
-  if (analogRead(A7) < 100) { // If push button is pushed, the value will be very low
+  if (analogRead(A7) < 100) { // if push button is pushed, the value will be very low
     status = 1 - status;
-    delay(500); // Delay 500ms so that a button push won't be counted multiple times.
+    delay(500); // delay 500ms so that a button push won't be counted multiple times.
   }
   if (status == 0) {
     return;
@@ -377,12 +378,12 @@ void loop() {
   Serial.print(' ');
   Serial.println(IRr);
 
-  // If US out of range, set back US reading to stable point
+  // if US out of range, set back US reading to stable point
   if (USr == 0) {
     USr = 11.0;
   }
 
-  if (IRr<4.0) { // Use IR if the reading is below 4.0 cm (IR readings don't scale well past this value)
+  if (IRr<4.0) { // use IR if the reading is below 4.0 cm (IR readings don't scale well past this value)
     error = 9.0-IR; // stable point from IR pov = 9.0cm
     correction = error * KPir + ((error-past_error)/TIMEOUT) * KDir; // PID controller for IR
   }
