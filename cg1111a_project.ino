@@ -247,16 +247,17 @@ double USdist() {
 
 // get distance from IR
 double IRdist() {
-  turnOnIR(); // get ir pulse reading
+  turnOnBlue(); // reading from ambient ir
   double x = analogRead(IR);
-  turnOnBlue(); // get ambient light reading
+  turnOnIR(); // reading from reflected ir pulse (with ambient ir)
   double y = analogRead(IR);
   /* 
-  2x-y gets us true ir reading, (y-x) is ambient light, x-(y-x) or 2x-y is true reading
+  x = reading for ambient ir, y = reading for reflected ir pulse (with ambient ir)
+  x-y = voltage drop due to ir pulse, this will filter out the ambient ir
   scale from experimentation is 60 to 510 for readings from 1.5cm to 9.0 cm
   values are normalised to reflect distance
   */
-  double scaled = (((2*x-y)-60.0)/450.0) * 7.5 + 1.5;
+  double scaled = (((x-y)-60.0)/450.0) * 7.5 + 1.5;
   return scaled;
 }
 
