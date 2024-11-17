@@ -92,7 +92,9 @@ direction and let it continue with the rest of the maze.
 4. The teaching team will set up one maze table on the final evaluation day. This maze layout
 will not be revealed beforehand. The figure below shows a sample maze layout.
 
-![Screenshot 2024-11-17 084408](https://github.com/user-attachments/assets/3966caec-3e1b-46e2-8ac6-a8df8a36e9ec)
+<div align="center">
+	<img src='https://github.com/user-attachments/assets/3966caec-3e1b-46e2-8ac6-a8df8a36e9ec'>
+</div>
 
 5. As can be seen in the sample maze layout, some of the walls may be missing. Your mBot
 must be able to handle such missing walls(e.g., continue going straight even if one or two side
