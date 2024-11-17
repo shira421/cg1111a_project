@@ -8,7 +8,7 @@
 /*
 Logic Table
 Pin 2 - A, Pin 3 - B
-IR Emitter Y0 (A LOW B LOW)
+IR Emitter OUT Y0 (A LOW B LOW)
 Blue LED Y1 (A HIGH B LOW)
 Green LED Y2 (A LOW B HIGH) 
 Red LED Y3 (A HIGH B HIGH)
