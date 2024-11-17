@@ -98,7 +98,6 @@ int status = 0;
 
 // variables for PID
 double past_error = 0;
-double summation = 0;
 double KPir = 29.0;
 double KDir = 17.0;
 double KPus = 22.0;
