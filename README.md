@@ -47,8 +47,6 @@ execute one of the following five types of turns:
 
 ---
 
-Figure 1: The five types of turns that your mBot needs to execute.
-
 **Colour Interpretation**
 Red Left-turn
 Green Right turn
