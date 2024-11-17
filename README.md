@@ -141,17 +141,30 @@ a. If your mBot fails to decode more than half of the colour challenges.
 b. If your mBot keeps bumping into walls or getting stuck in the maze.
 
 **Grading Criteria**
+
 • Project Demo 25
+
 • Neatness of wirings and robot 5
+
 • Algorithms and coding (e.g., elegance of algorithms, well commented codes, etc.) 10
+
 • Short team report 10
+
 **Total** 50
+
 
 The following are the key grading criteria during the project demo:
 • Number of bumps into the maze walls (regardless of whether it gets stuck); note that wires brushing against the wall are also regarded as bumps.
+
 • Successfully decoding the challenges: for each challenge, your mBot has up to 3 tries. You get full marks for a challenge if you succeed in the 1st attempt; some penalty marks will be incurred if you succeed in the 2nd or the 3rd attempt.
+
 • Whether your mBot utilizes the IR proximity sensor (we will test it).
+
 • Whether your mBot can travel in a near-straight line when not turning.
+
 • Whether your mBot can execute a turn accurately without over or undermanoeuvring too much.
+
 • Whether the mBot plays a celebratory tone upon detecting the end of the maze, and stops moving.
+
 • Total time taken to complete the maze.
+
