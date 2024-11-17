@@ -124,8 +124,7 @@ will not be revealed beforehand. The figure below shows a sample maze layout.
 must be able to handle such missing walls(e.g., continue going straight even if one or two side
 walls is/are missing).
 
-Note:
-• There will always be a maze wall in front of the mBot within a waypoint challenge grid.
+Note: There will always be a maze wall in front of the mBot within a waypoint challenge grid.
 
 6. Your mBot will be tested in two maze tables – one set up by us on the evaluation day, and
 another existing maze within the lab – to ensure that you did not overly tune your mBot to
