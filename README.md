@@ -38,17 +38,13 @@ Colour Paper's Positions.mp4” in Canvas for an illustration of how the black s
 colour paper will be placed.) Depending on the colour of the paper, your mBot needs to
 execute one of the following five types of turns:
 
-<dl>
-  <dd>This gets indented, without enumeration nor dots.</dd>
-</dl>
+---
 
 <div align="center">
 	<img src='https://github.com/user-attachments/assets/e2f27035-95de-40a3-9352-89362f776dae'>
 </div>
 
-<dl>
-  <dd>This gets indented, without enumeration nor dots.</dd>
-</dl>
+---
 
 Figure 1: The five types of turns that your mBot needs to execute.
 
@@ -102,17 +98,13 @@ direction and let it continue with the rest of the maze.
 4. The teaching team will set up one maze table on the final evaluation day. This maze layout
 will not be revealed beforehand. The figure below shows a sample maze layout.
 
-<dl>
-  <dd>This gets indented, without enumeration nor dots.</dd>
-</dl>
+---
 
 <div align="center">
 	<img src='https://github.com/user-attachments/assets/3966caec-3e1b-46e2-8ac6-a8df8a36e9ec'>
 </div>
 
-<dl>
-  <dd>This gets indented, without enumeration nor dots.</dd>
-</dl>
+---
 
 5. As can be seen in the sample maze layout, some of the walls may be missing. Your mBot
 must be able to handle such missing walls(e.g., continue going straight even if one or two side
