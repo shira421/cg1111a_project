@@ -71,15 +71,25 @@ the mBot must stop moving, and play a celebratory tune of your choice (Yay!).
 
 **Key Knowledge and Skills Needed**
 • DC Circuit Principles
+
 • Arduino/mBot programming (self-learn)
+
 • Analog-to-digital conversion
+
 • How to read/interpret datasheets
+
 • Circuit building skills
+
 • Principles of IR proximity sensor
+
 • Principles of colour sensor
+
 • Principles of ultrasonic range sensor
+
 • Hardware wiring and debugging skills
+
 • Equipment usage (multimeter, etc.)
+
 
 **Project Evaluation**
 1. Mock Evaluation: Week 13 Studio A timeslot
