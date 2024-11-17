@@ -70,6 +70,7 @@ the mBot at this grid will be white. Upon decoding that it has reached the end o
 the mBot must stop moving, and play a celebratory tune of your choice (Yay!).
 
 **Key Knowledge and Skills Needed**
+
 • DC Circuit Principles
 
 • Arduino/mBot programming (self-learn)
