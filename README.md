@@ -49,9 +49,13 @@ execute one of the following five types of turns:
 
 **Colour Interpretation**
 Red Left-turn
+
 Green Right turn
+
 Orange 180° turn within the same grid
+
 Pink Two successive left-turns in two grids
+
 Light Blue Two successive right-turns in two grids
 
 Note:
